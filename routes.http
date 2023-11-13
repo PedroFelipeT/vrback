@@ -1,0 +1,83 @@
+POST http://localhost:3333/cursos
+Content-Type: application/json
+
+{
+    "descricao" : "INTRODUÇÃO AO DIREITO",
+    "ementa" : "Ciência Jurídica. Direito positivo: direito objetivo e direito subjetivo; Ramos do Direito. Conceitos Jurídicos Fundamentais: Fontes Jurídicas; Norma Jurídica; Relação Jurídica; Fatos e Atos Jurídicos. Integração e Aplicação do Direito. Direções do Pensamento Jurídico. As dicotomias do Direito."
+}
+
+###
+
+GET http://localhost:3333/cursos
+
+###
+
+GET http://localhost:3333/cursos?search=Curso
+
+###
+
+PUT http://localhost:3333/cursos/1
+Content-Type: application/json
+
+{
+    "descricao" : "",
+    "ementa" : ""
+}
+
+###
+
+DELETE  http://localhost:3333/cursos/1
+
+
+###
+
+POST http://localhost:3333/alunos
+Content-Type: application/json
+
+{
+    "nome" : ""
+}
+
+###
+
+GET http://localhost:3333/alunos
+
+###
+
+GET http://localhost:3333/alunos?search=Curso
+
+###
+
+PUT http://localhost:3333/alunos/14
+Content-Type: application/json
+
+{
+    "nome" : ""
+}
+
+###
+
+DELETE  http://localhost:3333/alunos/14
+
+
+###
+
+POST http://localhost:3333/matriculas
+Content-Type: application/json
+
+{
+    "codigo_curso" : "",
+    "codigo_aluno" : ""
+}
+
+###
+
+get http://localhost:3333/matriculas
+
+###
+
+get http://localhost:3333/matriculados
+
+###
+
+DELETE  http://localhost:3333/matriculas/2/1
