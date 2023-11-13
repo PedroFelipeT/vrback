@@ -1,4 +1,4 @@
-# back
+# VR back
 API criada para uma aplicação focada em escolas.
 O arquivo .env está disponível, necessário somente realizar as configurações para a sua base.
 - Necessário executar o npm install e o npm run dev
